@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import main from '../assets/images/main.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
-import Logo from '../Components/Logo'
+import { Logo } from '../Components'
 const Landing = () => {
   return (
     <Wrapper>
@@ -19,7 +20,9 @@ const Landing = () => {
             microdosing disrupt gochujang tbh marfa slow-carb lomo stumptown
             messenger bag chia.
           </p>
-          <button className='btn btn-hero'>Login/Register</button>
+          <Link to='/register' className='btn btn-hero'>
+            Login/Register
+          </Link>
         </div>
         <img src={main} alt='Job Hunting' className='img main-img' />
       </div>
