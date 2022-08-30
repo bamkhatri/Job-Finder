@@ -1,0 +1,30 @@
+import logo from '../assets/images/logo.svg'
+import main from '../assets/images/main.svg'
+import Wrapper from '../assets/wrappers/LandingPage'
+const Landing = () => {
+  return (
+    <Wrapper>
+      <nav>
+        <img src={logo} alt='Job Tracking' />
+      </nav>
+      <div className='container page'>
+        <div className='info'>
+          <h1>
+            Job <span>Tracking</span> App
+          </h1>
+          <p>
+            I'm baby tacos stumptown mlkshk tumeric. Hashtag meh distillery banh
+            mi kogi, selvage occupy semiotics marfa flannel post-ironic
+            single-origin coffee master cleanse. Yes plz chambray fit
+            microdosing disrupt gochujang tbh marfa slow-carb lomo stumptown
+            messenger bag chia.
+          </p>
+          <button className='btn btn-hero'>Login/Register</button>
+        </div>
+        <img src={main} alt='Job Hunting' className='img main-img' />
+      </div>
+    </Wrapper>
+  )
+}
+
+export default Landing
