@@ -1,11 +1,11 @@
-import logo from '../assets/images/logo.svg'
 import main from '../assets/images/main.svg'
 import Wrapper from '../assets/wrappers/LandingPage'
+import Logo from '../Components/Logo'
 const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt='Job Tracking' />
+        <Logo />
       </nav>
       <div className='container page'>
         <div className='info'>
